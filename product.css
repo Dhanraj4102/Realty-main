@@ -1,0 +1,233 @@
+/*==================== Google Font ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*==================== Variables CSS ====================*/
+:root {
+  --header-height: 3.5rem;
+
+  /* Colors */
+  --hue: 512;
+  --first-color: #3498db;
+  --first-color-alt: #2980b9;
+  --first-color-light: #ecf0f1;
+  --title-color: #2c3e50;
+  --text-color: #7f8c8d;
+  --description-color: hsl(200, 15%, 43%);
+  --body-color: #f9f9f9;
+  --container-color: #fff;
+
+  /* Font */
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* Margin Bottom */
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /* Z Index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*==================== Base ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== Product Page ====================*/
+.product__prize {
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+  font-size: var(--big-font-size);
+}
+
+.stars {
+  color: rgb(255, 136, 0);
+}
+
+.rating {
+  font-size: var(--smaller-font-size);
+}
+
+.contact__title {
+  margin-bottom: var(--mb-1-5);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__property {
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.contact__msg {
+  margin-bottom: var(--mb-1);
+}
+
+.contact__number {
+  color: #0576a7;
+}
+
+button {
+  background-color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  color: #fff;
+  cursor: pointer;
+  padding: .7rem 4rem;
+  border: 1px solid var(--first-color);
+  border-radius: .3rem;
+}
+
+/*==================== Footer ====================*/
+.footer__container {
+  row-gap: 2rem;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  margin-bottom: var(--mb-2-5);
+  transition: .3s;
+}
+
+.footer__logo:hover {
+  color: orangered;
+}
+
+.footer__logo-icon {
+  font-size: 1.15rem;
+  color: var(--first-color);
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1-5);
+}
+
+.footer_data {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.footer__information {
+  font-size: var(--small-font-size);
+  padding: .07rem;
+  color: var(--description-color);
+}
+
+.footer__social {
+  display: inline-flex;
+  column-gap: .75rem;
+  color: gray;
+}
+
+.footer__social-link {
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: .3s;
+}
+
+.footer__social-link:hover {
+  transform: translateY(-.25rem);
+  color: orangered;
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--description-color);
+  margin: 4rem 0 1rem;
+}
+
+/*==================== Responsive Design ====================*/
+@media screen and (min-width: 320px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer__container {
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+  }
+
+  .footer__copy {
+    margin: 5rem 0 1rem;
+  }
+
+  .main {
+    margin-top: 4rem;
+  }
+
+  img {
+    border-radius: .5rem;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+}

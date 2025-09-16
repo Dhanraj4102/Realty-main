@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Remix icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="shortcut icon" href="/Realty-main/assets/favicon-img.png" type="image/x-icon" />
+
+  <title>Realty</title>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <i class="ri-building-4-fill nav__logo-icon"></i> Realty
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Buy/Rent</a></li>
+          <li class="nav__item"><a href="#sell" class="nav__link">Sell</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Service</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+          <!-- <li class="nav__item"><a href="#signup" class="nav__link">Sign up</a></li> -->
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="main">
+    <!-- ===== Home ===== -->
+    <section class="home" id="home">
+      <div class="home__container container" id="grid">
+        <img src="/Realty-main/assets/home.jpg" alt="" class="home__img" />
+        <div class="home__data">
+          <h1 class="home__title">
+            New Way Of <br /> Living
+          </h1>
+          <p class="home__description">
+            Discover a place you'll love to live
+          </p>
+          <a href="#products" class="button button--flex">
+            Explore Properties
+            <i class="ri-arrow-right-down-line button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Products ===== -->
+    <section class="product section container" id="products">
+      <h2 class="section__title-center">Featured Listings</h2>
+
+      <div class="product__container grid" id="pContainer">
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/homee1.jpg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">2 BHK Apartment</h3>
+          <span class="product__price">46.88L</span>
+          <p class="product__description">
+            It has a built-up area of 756 sqft and is priced at Rs. 46.88 lac. It is an unfurnished property.
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/home2.jpeg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">4 BHK Apartment</h3>
+          <span class="product__price">3.71CR</span>
+          <p class="product__description">
+            It’s a 2 bhk multistorey apartment situated in Aqura Builder And Developer Pride, Vadgaon Budruk, Pune
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/home3.jpeg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">2 BHK Apartment</h3>
+          <span class="product__price">73.89L</span>
+          <p class="product__description">
+            It’s a 2 bhk multistorey apartment situated in Aqura Builder And Developer Pride, Vadgaon Budruk, Pune.
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/home4.jpeg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">2 BHK Apartment</h3>
+          <span class="product__price">59L</span>
+          <p class="product__description">
+            Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <!-- Duplicate listings (can be cleaned if needed) -->
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/homee1.jpg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">2 BHK Apartment</h3>
+          <span class="product__price">46.88L</span>
+          <p class="product__description">
+            It has a built-up area of 756 sqft and is priced at Rs. 46.88 lac. It is an unfurnished property.
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/home2.jpeg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">4 BHK Apartment</h3>
+          <span class="product__price">3.71CR</span>
+          <p class="product__description">
+            It’s a 2 bhk multistorey apartment situated in Aqura Builder And Developer Pride, Vadgaon Budruk, Pune
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/home3.jpeg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">2 BHK Apartment</h3>
+          <span class="product__price">73.89L</span>
+          <p class="product__description">
+            It’s a 2 bhk multistorey apartment situated in Aqura Builder And Developer Pride, Vadgaon Budruk, Pune.
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+
+        <article class="product__card">
+          <a href="/product.html">
+            <img src="/Realty-main/assets/home4.jpeg" alt="" class="product__img" />
+          </a>
+          <h3 class="product__title">2 BHK Apartment</h3>
+          <span class="product__price">59L</span>
+          <p class="product__description">
+            Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+          </p>
+          <button class="button--flex product__button">
+            <i class="ri-heart-line"></i>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Sell ===== -->
+    <section class="sell section container" id="sell">
+      <div class="sell__container grid">
+        <div class="sell__box">
+          <i class="ri-mail-send-line sell__icon"></i>
+          <h3 class="sell__title">Sell Your Home</h3>
+          <p class="sell__description">
+            Sell your home quickly with professional help
+          </p>
+          <a href="#" class="button button--flex">
+            Get Started
+            <i class="ri-arrow-right-down-line button__icon"></i>
+          </a>
+        </div>
+        <img src="/Realty-main/assets/sell.jpg" alt="" class="sell__img" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
